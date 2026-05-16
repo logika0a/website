@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="top">
+    <h1>Меню кафе</h1>
+</header>
+
+<menu class="menu">
+
+    <div class="item">
+        <h2>Кава</h2>
+        <ul>
+            <li>Еспресо — 30 грн</li>
+            <li>Американо — 35 грн</li>
+            <li>Латте — 50 грн</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h2>Десерти</h2>
+        <ul>
+            <li>Чізкейк — 70 грн</li>
+            <li>Круасан — 40 грн</li>
+            <li>Тірамісу — 80 грн</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h2>Напої</h2>
+        <ul>
+            <li>Лимонад — 45 грн</li>
+            <li>Смузі — 60 грн</li>
+            <li>Чай — 25 грн</li>
+        </ul>
+    </div>
+
+</menu>
+
+</body>
+</html>
