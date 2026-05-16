@@ -47,3 +47,44 @@ footer {
     padding: 40px;
     text-align: center;
 }
+body {
+    margin: 0;
+    background: #f3f3f3;
+}
+
+.top {
+    background: #3b2f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.item h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    padding: 5px 0;
+}
