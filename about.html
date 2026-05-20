@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topp">
-    <h1>Про нас</h1>
-</header>
+    <header class="topbar">
+        <div class="container topbar-content">
+            <h1 class="page-title">Про нас</h1>
 
-<menu class="aboutt">
+            <nav class="nav">
+                <a href="index.html">Головна</a>
+                <a href="menu.html">Меню</a>
+                <a href="about.html" class="active">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="boxx">
-        <h2>Хто ми?</h2>
-        <p>
-            Ми — невелике затишне кафе, де готують смачну каву, десерти та напої.
-            Наше головне завдання — створити комфорт і гарний настрій.
-        </p>
-    </div>
+    <main class="page-section">
+        <div class="container">
+            <div class="intro">
+                <h2>Хто ми?</h2>
+                <p>
+                    Ми — невелике затишне кафе, де готують смачну каву, десерти та напої.
+                    Наше головне завдання — створити комфорт і гарний настрій для кожного гостя.
+                </p>
+            </div>
 
-    <div class="boxx">
-        <h2>Наша місія</h2>
-        <p>
-            Робити кожен день смачнішим 
-            Ми використовуємо тільки свіжі продукти та якісну каву.
-        </p>
-    </div>
+            <section class="cards-grid">
+                <article class="info-card">
+                    <h3>Наша атмосфера</h3>
+                    <p>
+                        У нас приємно провести час із друзями, попрацювати за чашкою кави
+                        або просто відпочити від щоденних справ.
+                    </p>
+                </article>
 
-    <div class="boxx">
-        <h2>Чому ми?</h2>
-        <p>
-            Затишна атмосфера 
-            Швидке обслуговування 
-            Смачна кава та десерти
-        </p>
-    </div>
+                <article class="info-card">
+                    <h3>Наша місія</h3>
+                    <p>
+                        Робити кожен день смачнішим, використовуючи свіжі продукти,
+                        якісну каву та щире обслуговування.
+                    </p>
+                </article>
 
-</menu>
+                <article class="info-card">
+                    <h3>Чому ми?</h3>
+                    <p>
+                        Затишна атмосфера, швидке обслуговування, приємний інтер’єр
+                        і турбота про кожного відвідувача.
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
 
 </body>
 </html>
