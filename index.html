@@ -1,31 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Затишне кафе</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <H1>Aromantic cafe</H1>
-<nav>
-        <a href="about.html">Про нас</a>
-    </nav>
-</header>
-<menu class="hero">
-    <h1>Ласкаво просимо в наше кафе!</h1>
-    <p>Смачна кава, десерти та затишна атмосфера</p>
-    <a class="button" href="menu.html">Переглянути меню</a>
-</menu>
-<about>
-    <h2>Про нас</h2>
-    <p>
-        Ми — невелике затишне кафе, де готують найсмачнішу каву та свіжу випічку.
-        Ідеальне місце для відпочинку з друзями або роботи.
-    </p>
-</about>
-<footer>
-    <p>2026 кафе "Aromantic cafe"</p>
-    <p1>Менеджер 0933357788</p1>
-</footer>
 <body>
-  
+
+    <header class="header">
+        <div class="container nav">
+            <h1 class="logo">CoffeeTime</h1>
+
+            <nav class="navigation">
+                <a href="index.html">Головна</a>
+                <a href="menu.html">Меню</a>
+                <a href="about.html">Про нас</a>
+                <a href="#contacts">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <p class="subtitle">Кава • Десерти • Атмосфера</p>
+                <h2>Місце, де кожна чашка дарує тепло</h2>
+                <p class="hero-text">
+                    Завітай до нашого кафе, щоб насолодитися ароматною кавою,
+                    свіжими десертами та спокійною атмосферою для відпочинку.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn">Переглянути меню</a>
+                    <a href="about.html" class="btn btn-light">Дізнатися про нас</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div class="container">
+                <h2>Ласкаво просимо</h2>
+                <p>
+                    Ми створили простір, у якому приємно зустрітися з друзями,
+                    відпочити після навчання чи просто взяти улюблену каву з собою.
+                </p>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h2>Чому обирають нас</h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Якісна кава</h3>
+                        <p>Готуємо напої зі свіжих зерен та добірних інгредієнтів.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Смачні десерти</h3>
+                        <p>Пропонуємо десерти, які чудово доповнюють будь-який напій.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Затишна атмосфера</h3>
+                        <p>У нас комфортно працювати, відпочивати та проводити час.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <p>м. Фастів, вул. Прикладна, 10</p>
+            <p>+380 00 000 00 00 • coffeetime@email.com</p>
+        </div>
+    </footer>
+
 </body>
 </html>
