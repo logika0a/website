@@ -47,8 +47,8 @@ body {
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
+    margin-left: auto;
 }
-
 .nav a,
 .navigation a,
 .nav-links a {
