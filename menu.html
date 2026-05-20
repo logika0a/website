@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню кафе</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="top">
-    <h1>Меню кафе</h1>
-</header>
+    <header class="topbar">
+        <div class="container topbar-content">
+            <h1 class="page-title">Меню кафе</h1>
 
-<menu class="menu">
+            <nav class="nav">
+                <a href="index.html">Головна</a>
+                <a href="menu.html" class="active">Меню</a>
+                <a href="about.html">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="item">
-        <h2>Кава</h2>
-        <ul>
-            <li>Еспресо — 30 грн</li>
-            <li>Американо — 35 грн</li>
-            <li>Латте — 50 грн</li>
-        </ul>
-    </div>
+    <main class="page-section">
+        <div class="container">
+            <div class="intro">
+                <h2>Наші смаколики</h2>
+                <p>Оберіть улюблену каву, десерт або напій для гарного настрою.</p>
+            </div>
 
-    <div class="item">
-        <h2>Десерти</h2>
-        <ul>
-            <li>Чізкейк — 70 грн</li>
-            <li>Круасан — 40 грн</li>
-            <li>Тірамісу — 80 грн</li>
-        </ul>
-    </div>
+            <section class="cards-grid">
+                <article class="menu-card">
+                    <h3>Кава</h3>
+                    <ul>
+                        <li><span>Еспресо</span><b>30 грн</b></li>
+                        <li><span>Американо</span><b>35 грн</b></li>
+                        <li><span>Лате</span><b>50 грн</b></li>
+                        <li><span>Капучино</span><b>55 грн</b></li>
+                    </ul>
+                </article>
 
-    <div class="item">
-        <h2>Напої</h2>
-        <ul>
-            <li>Лимонад — 45 грн</li>
-            <li>Смузі — 60 грн</li>
-            <li>Чай — 25 грн</li>
-        </ul>
-    </div>
+                <article class="menu-card">
+                    <h3>Десерти</h3>
+                    <ul>
+                        <li><span>Чізкейк</span><b>70 грн</b></li>
+                        <li><span>Круасан</span><b>40 грн</b></li>
+                        <li><span>Тірамісу</span><b>80 грн</b></li>
+                        <li><span>Маффін</span><b>45 грн</b></li>
+                    </ul>
+                </article>
 
-</menu>
+                <article class="menu-card">
+                    <h3>Напої</h3>
+                    <ul>
+                        <li><span>Лимонад</span><b>45 грн</b></li>
+                        <li><span>Смузі</span><b>60 грн</b></li>
+                        <li><span>Чай</span><b>25 грн</b></li>
+                        <li><span>Какао</span><b>40 грн</b></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </main>
 
 </body>
 </html>
