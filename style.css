@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
 }
 
+/* ----- ШАПКА ----- */
 .topbar,
 .header {
     background: linear-gradient(90deg, #3a2b2b, #4a3535);
@@ -25,7 +26,7 @@ body {
 }
 
 .topbar-content,
-.nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,13 +34,14 @@ body {
     flex-wrap: wrap;
 }
 
-.logo,
-.page-title {
+.page-title,
+.logo {
     color: white;
     font-size: 34px;
     font-weight: bold;
 }
 
+.nav,
 .navigation,
 .nav-links {
     display: flex;
@@ -47,9 +49,9 @@ body {
     flex-wrap: wrap;
 }
 
+.nav a,
 .navigation a,
-.nav-links a,
-.nav a {
+.nav-links a {
     text-decoration: none;
     color: white;
     padding: 10px 18px;
@@ -58,15 +60,16 @@ body {
     font-size: 16px;
 }
 
+.nav a:hover,
 .navigation a:hover,
 .nav-links a:hover,
-.nav a:hover,
+.nav a.active,
 .navigation a.active,
-.nav-links a.active,
-.nav a.active {
+.nav-links a.active {
     background-color: rgba(255, 255, 255, 0.14);
 }
 
+/* ----- HERO ГОЛОВНОЇ ----- */
 .hero {
     background:
         linear-gradient(rgba(59, 47, 47, 0.6), rgba(59, 47, 47, 0.6)),
@@ -103,6 +106,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* ----- КНОПКИ ----- */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -126,6 +130,7 @@ body {
     background-color: #f1e7dc;
 }
 
+/* ----- СЕКЦІЇ ----- */
 .page-section,
 .welcome,
 .advantages,
@@ -158,6 +163,7 @@ body {
     color: #5b514b;
 }
 
+/* ----- КАРТКИ ----- */
 .cards-grid,
 .cards {
     display: flex;
@@ -195,6 +201,13 @@ body {
     color: #2f2a26;
 }
 
+.info-card p,
+.card p {
+    color: #4f4640;
+    font-size: 17px;
+}
+
+/* ----- СПИСОК МЕНЮ ----- */
 .menu-card ul {
     list-style: none;
 }
@@ -218,14 +231,10 @@ body {
 
 .menu-card b {
     color: #6a4b3b;
+    font-weight: bold;
 }
 
-.info-card p,
-.card p {
-    color: #4f4640;
-    font-size: 17px;
-}
-
+/* ----- БЛОК "ЗАВІТАЙ ДО НАС" ----- */
 .visit-box {
     background-color: #f8f6f4;
     border-radius: 18px;
@@ -233,6 +242,73 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* ----- КОНТАКТИ ----- */
+.contact-extra {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact-box {
+    background-color: #f8f6f4;
+    width: 480px;
+    max-width: 100%;
+    padding: 30px 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.contact-box h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #2f2a26;
+}
+
+.contact-box p {
+    font-size: 17px;
+    color: #4f4640;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d7cec7;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b07d62;
+    box-shadow: 0 0 0 3px rgba(176, 125, 98, 0.15);
+}
+
+.contact-form .btn {
+    align-self: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----- ФУТЕР ----- */
 .footer {
     background: linear-gradient(90deg, #3a2b2b, #4a3535);
     color: white;
@@ -244,20 +320,22 @@ body {
     margin: 5px 0;
 }
 
+/* ----- АДАПТИВ ----- */
 @media (max-width: 900px) {
     .topbar-content,
-    .nav {
+    .navbar {
         flex-direction: column;
         text-align: center;
     }
 
+    .nav,
     .navigation,
     .nav-links {
         justify-content: center;
     }
 
-    .logo,
-    .page-title {
+    .page-title,
+    .logo {
         font-size: 30px;
     }
 
@@ -275,8 +353,8 @@ body {
 }
 
 @media (max-width: 500px) {
-    .logo,
-    .page-title {
+    .page-title,
+    .logo {
         font-size: 26px;
     }
 
@@ -289,15 +367,21 @@ body {
 
     .menu-card,
     .info-card,
-    .card {
+    .card,
+    .contact-box {
         width: 100%;
         max-width: 340px;
     }
 
+    .nav a,
     .navigation a,
-    .nav-links a,
-    .nav a {
+    .nav-links a {
         padding: 8px 14px;
+        font-size: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
         font-size: 15px;
     }
 }
