@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* ----- ШАПКА ----- */
 .topbar,
 .header {
     background: linear-gradient(90deg, #3a2b2b, #4a3535);
@@ -69,7 +68,6 @@ body {
     background-color: rgba(255, 255, 255, 0.14);
 }
 
-/* ----- HERO ГОЛОВНОЇ ----- */
 .hero {
     background:
         linear-gradient(rgba(59, 47, 47, 0.6), rgba(59, 47, 47, 0.6)),
@@ -106,7 +104,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* ----- КНОПКИ ----- */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -130,7 +127,6 @@ body {
     background-color: #f1e7dc;
 }
 
-/* ----- СЕКЦІЇ ----- */
 .page-section,
 .welcome,
 .advantages,
@@ -163,7 +159,6 @@ body {
     color: #5b514b;
 }
 
-/* ----- КАРТКИ ----- */
 .cards-grid,
 .cards {
     display: flex;
@@ -207,7 +202,6 @@ body {
     font-size: 17px;
 }
 
-/* ----- СПИСОК МЕНЮ ----- */
 .menu-card ul {
     list-style: none;
 }
@@ -234,7 +228,6 @@ body {
     font-weight: bold;
 }
 
-/* ----- БЛОК "ЗАВІТАЙ ДО НАС" ----- */
 .visit-box {
     background-color: #f8f6f4;
     border-radius: 18px;
@@ -242,7 +235,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* ----- КОНТАКТИ ----- */
 .contact-extra {
     display: flex;
     justify-content: center;
@@ -308,7 +300,6 @@ body {
     cursor: pointer;
 }
 
-/* ----- ФУТЕР ----- */
 .footer {
     background: linear-gradient(90deg, #3a2b2b, #4a3535);
     color: white;
@@ -320,7 +311,6 @@ body {
     margin: 5px 0;
 }
 
-/* ----- АДАПТИВ ----- */
 @media (max-width: 900px) {
     .topbar-content,
     .navbar {
